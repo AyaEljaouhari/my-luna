@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="luna_rtabmap" type="lane_following_node.py" name="lane_following_node" output="screen"/>
+  <node pkg="luna_rtabmap" type="map_publisher.py" name="map_publisher_node" output="screen"/>
+</launch>
