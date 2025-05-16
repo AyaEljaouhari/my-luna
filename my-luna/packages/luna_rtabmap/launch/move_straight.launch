@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="luna_rtabmap" type="move_straight.py" name="move_straight_node" output="screen"/>
+
+</launch>

@@ -1,0 +1,15 @@
+        self.line_lost_count += 1
+            rospy.logwarn("White line not detected (%d/%d)", self.line_lost_count, self.line_lost_threshold)
+
+            if self.line_lost_count > self.line_lost_threshold:
+                cmd.v = 0.0
+                cmd.omega = 0.0
+            else:
+                cmd.v = 0.0
+                cmd.omega = 0.5  # slight turn to recover
+
+        self.cmd_pub.publish(cmd)
+
+if __name__ == "__main__":
+    lane_follower = LaneFollower()
+    rospy.spin()
