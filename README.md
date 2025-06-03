@@ -7,6 +7,7 @@ Current State:
 Line Following: The Duckiebot successfully detects the white line using its camera. However, the current proportional controller is not robust enough to follow curves and tends to drive straight off the track. The robot also does not stop as intended when the white line is lost.
 
 2D Mapping: RTAB-Map is integrated and configured to receive camera and odometry data. While the project aims to generate a 2D OccupancyGrid map, successful visualization of this map in RViz was not achieved during development (an error occurred when attempting to add the "Map" display). Other RViz visualizations (robot model, TF, odometry, pose, image feed) work correctly.
+
 Prerequisites
 Before proceeding, ensure you have the following:
 
@@ -15,6 +16,7 @@ Duckiebot DB21M ("Daffy"): Fully assembled and functional.
 Duckietown Environment: A track with continuous white lines.
 Host PC: Running Ubuntu 22.04 LTS (recommended for Duckietown compatibility).
 ROS Noetic: Installed on your host PC.
+
 Software
 Duckietown Shell: Installed and configured on your host PC.
 ROS Noetic (on Duckiebot): Your Duckiebot firmware should be configured for ROS Noetic.
@@ -24,12 +26,15 @@ Bash
 # On your Duckiebot terminal (or SSH into it)
 sudo apt update
 sudo apt install ros-noetic-rtabmap-ros
+
 cv_bridge: This is usually part of ROS, but ensure it's available.
 Bash
 
 # On your Duckiebot terminal
 sudo apt install ros-noetic-cv-bridge
+
 Setup Instructions
+
 1. Set up Duckietown Shell Environment
 If you haven't already, set up your Duckietown shell environment on your host PC. Follow the official Duckietown documentation for this: https://docs.duckietown.org/daffy/duckiebot_manual/duckiebot_setup/index.html
 
