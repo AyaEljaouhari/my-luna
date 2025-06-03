@@ -5,6 +5,7 @@ This project enables a Duckiebot (model DB21M, named "Luna") to attempt autonomo
 Current State:
 
 Line Following: The Duckiebot successfully detects the white line using its camera. However, the current proportional controller is not robust enough to follow curves and tends to drive straight off the track. The robot also does not stop as intended when the white line is lost.
+
 2D Mapping: RTAB-Map is integrated and configured to receive camera and odometry data. While the project aims to generate a 2D OccupancyGrid map, successful visualization of this map in RViz was not achieved during development (an error occurred when attempting to add the "Map" display). Other RViz visualizations (robot model, TF, odometry, pose, image feed) work correctly.
 Prerequisites
 Before proceeding, ensure you have the following:
