@@ -1,4 +1,5 @@
 Project Overview
+
 This project enables a Duckiebot (model DB21M, named "Luna") to attempt autonomous navigation along a continuous white line in a Duckietown environment. Concurrently, it integrates the RTAB-Map algorithm to build a 2D map of the environment using the Duckiebot's monocular camera and wheel encoder odometry. The system is built on ROS (Robot Operating System) and aims to visualize the robot's pose and the generated map in RViz.
 
 Current State:
